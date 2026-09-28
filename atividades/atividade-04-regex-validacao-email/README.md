@@ -5,6 +5,7 @@
 > depois passei pra cá.
 
 📄 Código: [`validador_email.py`](validador_email.py)
+📖 Resumo da aula: [Expressões Regulares](../../aula-expressoes-regulares.md)
 
 ---
 
