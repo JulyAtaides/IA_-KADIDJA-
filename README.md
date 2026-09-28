@@ -25,12 +25,19 @@ exercícios resolvidos passo a passo.
 - ✅ [Atividade 1 — Prefixos e Sufixos](atividades/atividade-01-prefixos-e-sufixos.md)
 - ✅ [Atividade 2 — Gramática](atividades/atividade-02-gramatica.md)
 
-### 📖 Gramáticas Formais e Hierarquia de Chomsky
+### 📖 Aula 3 — Gramáticas Formais e Hierarquia de Chomsky
+- 📝 [Anotações e resumo para prova](aula-03-gramaticas-formais-e-chomsky.md)
 - ✅ [Atividade 3 — Gramáticas Formais e Hierarquia de Chomsky](atividades/atividade-03-gramaticas-formais-e-chomsky.md)
 
 ### 📖 Unidade 3 — Expressões Regulares
+- 📝 [Anotações e resumo para prova](aula-expressoes-regulares.md)
 - ✅ [Atividade 4 — Regex para validação de e-mail](atividades/atividade-04-regex-validacao-email/README.md)
   (código em [`validador_email.py`](atividades/atividade-04-regex-validacao-email/validador_email.py))
+
+### 📖 Aula 09 — Máquinas de Turing
+- 📝 [Anotações do vídeo e resumo para prova](aula-09-maquinas-de-turing.md)
+- ✅ [Atividade 5 — Máquinas de Turing (0ⁿ1ⁿ)](atividades/atividade-05-maquina-de-turing/README.md)
+  (código em [`maquina_de_turing.py`](atividades/atividade-05-maquina-de-turing/maquina_de_turing.py))
 
 ---
 
