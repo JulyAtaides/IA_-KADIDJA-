@@ -25,6 +25,13 @@ exercícios resolvidos passo a passo.
 - ✅ [Atividade 1 — Prefixos e Sufixos](atividades/atividade-01-prefixos-e-sufixos.md)
 - ✅ [Atividade 2 — Gramática](atividades/atividade-02-gramatica.md)
 
+### 📖 Gramáticas Formais e Hierarquia de Chomsky
+- ✅ [Atividade 3 — Gramáticas Formais e Hierarquia de Chomsky](atividades/atividade-03-gramaticas-formais-e-chomsky.md)
+
+### 📖 Unidade 3 — Expressões Regulares
+- ✅ [Atividade 4 — Regex para validação de e-mail](atividades/atividade-04-regex-validacao-email/README.md)
+  (código em [`validador_email.py`](atividades/atividade-04-regex-validacao-email/validador_email.py))
+
 ---
 
 <div align="center">
