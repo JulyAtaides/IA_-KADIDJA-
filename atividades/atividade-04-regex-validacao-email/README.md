@@ -177,6 +177,29 @@ Por que cada um deu esse resultado:
 
 ---
 
+## 📓 Minha resolução no caderno
+
+Fiz primeiro à mão e depois passei o código pro computador. As páginas estão
+na ordem:
+
+| Página | O que tem |
+|:--:|:--|
+| 1 | a regex e o começo da função `motivo_invalido` (espaço, @ e usuário) |
+| 2 | os `if` do domínio e da extensão |
+| 3 | o último `return`, a parte que lê os 5 e-mails e o começo do resultado |
+| 4 | o fim do resultado: último válido e os inválidos com o motivo |
+
+<p align="center">
+  <img src="caderno/pagina-1.jpeg" width="45%" alt="página 1">
+  <img src="caderno/pagina-2.jpeg" width="45%" alt="página 2">
+</p>
+<p align="center">
+  <img src="caderno/pagina-3.jpeg" width="45%" alt="página 3">
+  <img src="caderno/pagina-4.jpeg" width="45%" alt="página 4">
+</p>
+
+---
+
 ## ⚠️ Cuidados que anotei
 
 - O `.` sozinho na regex é **qualquer símbolo**. Pra ponto de verdade é `\.`
