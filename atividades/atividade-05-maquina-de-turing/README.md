@@ -6,6 +6,7 @@
 
 📄 Código: [`maquina_de_turing.py`](maquina_de_turing.py)
 🖼️ Prints: pasta [`prints`](prints)
+📎 PDF que eu entreguei: [`entrega-atividade-05.pdf`](entrega-atividade-05.pdf)
 📖 Resumo da aula: [aula 09 — Máquinas de Turing](../../aula-09-maquinas-de-turing.md)
 
 ---
