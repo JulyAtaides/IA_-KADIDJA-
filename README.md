@@ -39,6 +39,14 @@ exercícios resolvidos passo a passo.
 - ✅ [Atividade 5 — Máquinas de Turing (0ⁿ1ⁿ)](atividades/atividade-05-maquina-de-turing/README.md)
   (código em [`maquina_de_turing.py`](atividades/atividade-05-maquina-de-turing/maquina_de_turing.py))
 
+### 📖 Aula 11 — Agentes Inteligentes
+- 📝 [Anotações da aula](atividades/atividade-06-agentes-inteligentes/README.md)
+- ✅ [Atividade 6 — Exercícios 2.3, 2.4 e 2.5](<atividades/atividade-06-agentes-inteligentes/ATIVIDADE KADIDJA.docx>)
+
+### 📖 Aula 13 — Aprendizado supervisionado em sistemas especialistas
+- ✅ [Atividade 7 — Fila de cadastros (notebook)](atividades/atividade-07-aprendizado-supervisionado/README.md)
+  ([abrir no Colab](https://colab.research.google.com/github/JulyAtaides/IA_-KADIDJA-/blob/main/atividades/atividade-07-aprendizado-supervisionado/fila_de_cadastros.ipynb))
+
 ---
 
 <div align="center">
