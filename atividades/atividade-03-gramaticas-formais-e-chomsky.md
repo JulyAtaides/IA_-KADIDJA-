@@ -1,9 +1,9 @@
-# 📝 Atividade 3 — Gramáticas Formais e Hierarquia de Chomsky
+# Atividade 3 — Gramáticas Formais e Hierarquia de Chomsky
 
 > Lista de 11 questões da aula 3. Copiei o enunciado de cada uma e respondi
 > logo embaixo.
 
-📖 Resumo da aula: [aula 3 — Gramáticas Formais e Hierarquia de Chomsky](../aula-03-gramaticas-formais-e-chomsky.md)
+Resumo da aula: [aula 3 — Gramáticas Formais e Hierarquia de Chomsky](../aula-03-gramaticas-formais-e-chomsky.md)
 
 **Questões:**
 
@@ -34,7 +34,7 @@ Considere Σ = {a, b, c} e responda:
 5. Escreva uma palavra formada por símbolos desse alfabeto.
 ```
 
-### ✍️ Resolução
+### Resolução
 
 1. São **3 símbolos**. É só contar o que está dentro das chaves: a, b e c.
 2. São **a, b e c**, exatamente os que aparecem dentro das chaves.
@@ -54,15 +54,15 @@ Classifique cada sequência como palavra válida ou não válida, justificando:
 0101, 00110, 012, 111, 10a
 ```
 
-### ✍️ Resolução
+### Resolução
 
 | Sequência | Resposta | Por quê |
 |:--|:--:|:--|
-| `0101` | ✅ válida | todos os símbolos são 0 ou 1, e os dois estão em Σ |
-| `00110` | ✅ válida | todos os símbolos são 0 ou 1, e os dois estão em Σ |
-| `012` | ❌ não válida | o 2 não está em Σ, e basta um símbolo de fora pra estragar a sequência inteira |
-| `111` | ✅ válida | o 1 está em Σ, e repetir o mesmo símbolo pode |
-| `10a` | ❌ não válida | o a não está em Σ = {0, 1} |
+| `0101` | válida | todos os símbolos são 0 ou 1, e os dois estão em Σ |
+| `00110` | válida | todos os símbolos são 0 ou 1, e os dois estão em Σ |
+| `012` | não válida | o 2 não está em Σ, e basta um símbolo de fora pra estragar a sequência inteira |
+| `111` | válida | o 1 está em Σ, e repetir o mesmo símbolo pode |
+| `10a` | não válida | o a não está em Σ = {0, 1} |
 
 ---
 
@@ -76,7 +76,7 @@ Determine se as afirmações são verdadeiras ou falsas. Justifique cada respost
 1. 0 ∈ Σ    2. 1 ∈ Σ    3. 01 ∈ Σ    4. 01 ∈ Σ*    5. 2 ∈ Σ    6. 101 ∈ Σ*
 ```
 
-### ✍️ Resolução
+### Resolução
 
 1. `0 ∈ Σ`: **Verdadeiro**. O 0 é um dos dois símbolos escritos em Σ = {0, 1}.
 2. `1 ∈ Σ`: **Verdadeiro**. Mesma coisa, o 1 também está na lista.
@@ -101,7 +101,7 @@ Considere a linguagem L = {0, 01, 011, 0111}.
 Determine se cada palavra pertence à linguagem: 0, 01, 0111, 10, 111, 011
 ```
 
-### ✍️ Resolução
+### Resolução
 
 1. `0 ∈ L`: sim, o 0 está escrito na lista.
 2. `01 ∈ L`: sim, o 01 está escrito na lista.
@@ -126,7 +126,7 @@ Considere L = {bⁿ | n ≥ 1}.
 4. A palavra vazia (ε) pertence à linguagem?
 ```
 
-### ✍️ Resolução
+### Resolução
 
 1. As cinco primeiras: `b`, `bb`, `bbb`, `bbbb`, `bbbbb`.
 2. O `bⁿ` quer dizer **n letras b**, e a condição diz que o n começa em 1.
@@ -152,7 +152,7 @@ Depois responda:
 3. Qual é o comprimento da palavra ε?
 ```
 
-### ✍️ Resolução
+### Resolução
 
 - **A) `L = ∅`** é uma caixa vazia. Já o `L = {ε}` é uma caixa com uma folha em
   branco dentro.
@@ -183,7 +183,7 @@ Identifique:
 5. Qual palavra pode ser gerada por essa gramática?
 ```
 
-### ✍️ Resolução
+### Resolução
 
 1. `V = {S, A}`
 2. `T = {0, 1}`
@@ -205,7 +205,7 @@ Considere S → 0S. Começando com S:
 4. Escreva a sequência completa de derivação.
 ```
 
-### ✍️ Resolução
+### Resolução
 
 1. `S ⇒ 0S`
 2. `0S ⇒ 00S`
@@ -223,7 +223,7 @@ Utilizando G: S → aS | b, gere aaab.
 Escreva todos os passos da derivação.
 ```
 
-### ✍️ Resolução
+### Resolução
 
 ```
 início    S        comecei pelo símbolo inicial, como manda a definição
@@ -244,16 +244,16 @@ Considere G: S → 0S | 1.
 Determine se cada palavra pode ser gerada: 1, 01, 001, 0001, 101, 1001
 ```
 
-### ✍️ Resolução
+### Resolução
 
 | Palavra | Pode ser gerada? | Por quê |
 |:--|:--:|:--|
-| `1` | ✅ sim | `S ⇒ 1` |
-| `01` | ✅ sim | `S ⇒ 0S ⇒ 01` |
-| `001` | ✅ sim | `S ⇒ 0S ⇒ 00S ⇒ 001` |
-| `0001` | ✅ sim | `S ⇒ 0S ⇒ 00S ⇒ 000S ⇒ 0001` |
-| `101` | ❌ não | começa com 1. Pra sair um 1, a única regra é S → 1, e ela apaga o S, ou seja, encerra a derivação ali |
-| `1001` | ❌ não | mesmo motivo: o 1 do começo encerra a derivação e não dá pra escrever mais nada depois |
+| `1` | sim | `S ⇒ 1` |
+| `01` | sim | `S ⇒ 0S ⇒ 01` |
+| `001` | sim | `S ⇒ 0S ⇒ 00S ⇒ 001` |
+| `0001` | sim | `S ⇒ 0S ⇒ 00S ⇒ 000S ⇒ 0001` |
+| `101` | não | começa com 1. Pra sair um 1, a única regra é S → 1, e ela apaga o S, ou seja, encerra a derivação ali |
+| `1001` | não | mesmo motivo: o 1 do começo encerra a derivação e não dá pra escrever mais nada depois |
 
 ---
 
@@ -272,7 +272,7 @@ Considere G: S → aS | b. Responda sem consultar o gabarito:
 7. Descreva, com suas palavras, o padrão das palavras geradas por essa gramática.
 ```
 
-### ✍️ Resolução
+### Resolução
 
 1. Sim
 2. Sim
@@ -285,4 +285,4 @@ Considere G: S → aS | b. Responda sem consultar o gabarito:
 
 ---
 
-[⬅️ Voltar ao início](../README.md)
+[Voltar ao início](../README.md)

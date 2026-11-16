@@ -1,4 +1,4 @@
-# 📝 Atividade 1 — Prefixos e Sufixos
+# Atividade 1 — Prefixos e Sufixos
 
 ## Enunciado
 
@@ -11,7 +11,7 @@ ab
 
 ---
 
-## ✍️ Resolução
+## Resolução
 
 **Prefixo** = pedaço que começa no **início** da palavra. Vou pegando desde o
 vazio até a palavra inteira:
@@ -29,7 +29,7 @@ olhando do fim:
 
 ---
 
-## ✅ Gabarito
+## Gabarito
 
 **Prefixos:**
 ```
@@ -43,4 +43,4 @@ olhando do fim:
 
 ---
 
-[⬅️ Voltar ao início](../README.md)
+[Voltar ao início](../README.md)

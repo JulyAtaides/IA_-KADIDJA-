@@ -1,57 +1,34 @@
-<div align="center">
+# IA, Linguagens Formais e Autômatos
 
-# 🧠 Inteligência Artificial
+Repositório da disciplina com a professora Kadidja Valéria, Engenharia de Software (UDF), 2026/2.
 
-Anotações de aula e atividades resolvidas da disciplina de **Inteligência
-Artificial** — curso de Engenharia de Software (**UDF**).
+Uso este repositório para guardar as atividades que entrego e os resumos que faço depois de cada aula.
+Os resumos ficam na raiz, com o nome da aula, e as atividades ficam na pasta `atividades/`, uma por
+pasta ou arquivo, na ordem em que foram passadas.
 
-![Disciplina](https://img.shields.io/badge/Disciplina-Inteligência%20Artificial-BA55D3?style=for-the-badge)
-![UDF](https://img.shields.io/badge/UDF-Brasília,%20DF-9370DB?style=for-the-badge)
+## Aulas e atividades
 
-</div>
+| Aula | Assunto | Meu resumo | Atividade |
+|:--|:--|:--|:--|
+| 10/08 | Linguagens formais | [resumo](aula-01-linguagens-formais.md) | [Atividade 1 · prefixos e sufixos](atividades/atividade-01-prefixos-e-sufixos.md)<br>[Atividade 2 · gramática](atividades/atividade-02-gramatica.md) |
+| 17/08 | Gramáticas formais e Chomsky | [resumo](aula-03-gramaticas-formais-e-chomsky.md) | [Atividade 3 · lista de 11 questões](atividades/atividade-03-gramaticas-formais-e-chomsky.md) |
+| 14/09 | Expressões regulares | [resumo](aula-expressoes-regulares.md) | [Atividade 4 · regex de e-mail](atividades/atividade-04-regex-validacao-email/README.md) ([código](atividades/atividade-04-regex-validacao-email/validador_email.py)) |
+| 28/09 | Máquinas de Turing | [resumo](aula-09-maquinas-de-turing.md) | [Atividade 5 · máquina para 0ⁿ1ⁿ](atividades/atividade-05-maquina-de-turing/README.md) ([código](atividades/atividade-05-maquina-de-turing/maquina_de_turing.py)) |
+| 19/10 | Agentes inteligentes | [resumo](atividades/atividade-06-agentes-inteligentes/README.md) | [Atividade 6 · exercícios 2.3, 2.4 e 2.5](<atividades/atividade-06-agentes-inteligentes/ATIVIDADE KADIDJA.docx>) |
+| 09/11 | Aprendizado supervisionado | — | [Atividade 7 · fila de cadastros](atividades/atividade-07-aprendizado-supervisionado/README.md) ([Colab](https://colab.research.google.com/github/JulyAtaides/IA_-KADIDJA-/blob/main/atividades/atividade-07-aprendizado-supervisionado/fila_de_cadastros.ipynb)) |
 
----
+## Como rodar os códigos
 
-## 📚 Sobre este repositório
+As atividades 4 e 5 são em Python puro. Entro na pasta da atividade e rodo o arquivo:
 
-Aqui eu organizo meus estudos da disciplina: resumos para prova, mapas mentais
-e a resolução das atividades práticas. Cada aula tem suas anotações e os
-exercícios resolvidos passo a passo.
+```
+python validador_email.py
+python maquina_de_turing.py 0011
+```
 
-## 🗂️ Índice
-
-### 📖 Aula 1 — Linguagens Formais
-- 📝 [Anotações e resumo para prova](aula-01-linguagens-formais.md)
-- ✅ [Atividade 1 — Prefixos e Sufixos](atividades/atividade-01-prefixos-e-sufixos.md)
-- ✅ [Atividade 2 — Gramática](atividades/atividade-02-gramatica.md)
-
-### 📖 Aula 3 — Gramáticas Formais e Hierarquia de Chomsky
-- 📝 [Anotações e resumo para prova](aula-03-gramaticas-formais-e-chomsky.md)
-- ✅ [Atividade 3 — Gramáticas Formais e Hierarquia de Chomsky](atividades/atividade-03-gramaticas-formais-e-chomsky.md)
-
-### 📖 Unidade 3 — Expressões Regulares
-- 📝 [Anotações e resumo para prova](aula-expressoes-regulares.md)
-- ✅ [Atividade 4 — Regex para validação de e-mail](atividades/atividade-04-regex-validacao-email/README.md)
-  (código em [`validador_email.py`](atividades/atividade-04-regex-validacao-email/validador_email.py))
-
-### 📖 Aula 09 — Máquinas de Turing
-- 📝 [Anotações do vídeo e resumo para prova](aula-09-maquinas-de-turing.md)
-- ✅ [Atividade 5 — Máquinas de Turing (0ⁿ1ⁿ)](atividades/atividade-05-maquina-de-turing/README.md)
-  (código em [`maquina_de_turing.py`](atividades/atividade-05-maquina-de-turing/maquina_de_turing.py))
-
-### 📖 Aula 11 — Agentes Inteligentes
-- 📝 [Anotações da aula](atividades/atividade-06-agentes-inteligentes/README.md)
-- ✅ [Atividade 6 — Exercícios 2.3, 2.4 e 2.5](<atividades/atividade-06-agentes-inteligentes/ATIVIDADE KADIDJA.docx>)
-
-### 📖 Aula 13 — Aprendizado supervisionado em sistemas especialistas
-- ✅ [Atividade 7 — Fila de cadastros (notebook)](atividades/atividade-07-aprendizado-supervisionado/README.md)
-  ([abrir no Colab](https://colab.research.google.com/github/JulyAtaides/IA_-KADIDJA-/blob/main/atividades/atividade-07-aprendizado-supervisionado/fila_de_cadastros.ipynb))
+A atividade 7 é um notebook. O jeito mais fácil é abrir pelo link do Colab da tabela e rodar
+em *Ambiente de execução > Executar tudo*.
 
 ---
 
-<div align="center">
-
-**Julyane Ataides** — Engenharia de Software, UDF
-[![GitHub](https://img.shields.io/badge/GitHub-@JulyAtaides-C71585?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JulyAtaides)
-
-</div>
+Julyane Ataides · [github.com/JulyAtaides](https://github.com/JulyAtaides)

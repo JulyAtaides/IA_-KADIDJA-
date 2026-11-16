@@ -1,4 +1,4 @@
-# 📖 Aula 1 — Linguagens Formais e Gramáticas
+# Aula 1 — Linguagens Formais e Gramáticas
 
 > Minhas anotações da primeira aula. Escrevi com as minhas palavras pra fixar
 > os conceitos: alfabetos, cadeias, linguagens e gramáticas. No fim tem o
@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 O que eu preciso saber ao terminar a aula
+## O que eu preciso saber ao terminar a aula
 
 - Entender o que é um **alfabeto**;
 - Reconhecer **cadeias / palavras**;
@@ -44,7 +44,7 @@ q = "Fui bem na prova."
 - `p ∨ q` → "Estudei para a prova **ou** fui bem na prova." (basta uma ser verdade)
 - `p → q` → "**Se** estudei para a prova, **então** fui bem na prova."
 
-> ⚠️ **Cuidado com o `→`:** ele muda de sentido dependendo de onde aparece.
+> **Atenção:** **Cuidado com o `→`:** ele muda de sentido dependendo de onde aparece.
 > Na **lógica** = implicação. Na **gramática** (mais pra frente) = produz/gera.
 
 ---
@@ -65,7 +65,7 @@ Comparando tamanhos:
 |ε|   = 0      (nenhum símbolo)
 ```
 
-> ⚠️ **Não confundir:** `ε` **não** é espaço em branco. Espaço é um símbolo;
+> **Atenção:** **Não confundir:** `ε` **não** é espaço em branco. Espaço é um símbolo;
 > `ε` é a ausência total de símbolos.
 
 ---
@@ -86,7 +86,7 @@ Prefixos(ab) = {ε, a, ab}
 Sufixos(ab) = {ε, b, ab}
 ```
 
-🧠 **Meu macete:**
+**Meu macete:**
 - Prefi**xo** → começa no come**ço**.
 - Sufi**xo** → termina no fi**m**.
 - O `ε` sempre entra nos dois (é prefixo **e** sufixo de qualquer palavra).
@@ -140,7 +140,7 @@ Pra um alfabeto de 2 símbolos, a quantidade de cadeias de cada tamanho é `2ⁿ
 | 4 | 16 |
 | 5 | 32 |
 
-> 📌 **Sacada importante:** `Σ*` é **infinito**, mas cada palavra dentro dele
+> **Sacada importante:** `Σ*` é **infinito**, mas cada palavra dentro dele
 > tem tamanho **finito**.
 
 ---
@@ -253,7 +253,7 @@ S → aS → aaS → aaε → aa
 S → aS → aaS → aaaS → aaaε → aaa
 ```
 
-🧠 Reparei no padrão: cada `S → aS` acrescenta um `a`, e o `S → ε` é o que
+Reparei no padrão: cada `S → aS` acrescenta um `a`, e o `S → ε` é o que
 "fecha" a palavra.
 
 ---
@@ -281,8 +281,8 @@ Ou seja: **qualquer quantidade de `a`, incluindo zero** (o caso de zero `a`
 
 Resolvi as duas em arquivos separados:
 
-- ✅ [Atividade 1 — Prefixos e Sufixos](atividades/atividade-01-prefixos-e-sufixos.md)
-- ✅ [Atividade 2 — Gramática](atividades/atividade-02-gramatica.md)
+- [Atividade 1 — Prefixos e Sufixos](atividades/atividade-01-prefixos-e-sufixos.md)
+- [Atividade 2 — Gramática](atividades/atividade-02-gramatica.md)
 
 ---
 
@@ -303,7 +303,7 @@ Resolvi as duas em arquivos separados:
 
 ---
 
-## 14. 🧠 Mapa mental
+## 14. Mapa mental
 
 ```
                     LINGUAGENS FORMAIS
@@ -336,7 +336,7 @@ Resolvi as duas em arquivos separados:
 
 ---
 
-## 📌 Checklist da Aula 1
+## Checklist da Aula 1
 
 Consigo explicar cada um destes?
 
@@ -358,7 +358,7 @@ Consigo explicar cada um destes?
 
 ---
 
-## 🚀 Conceito-chave (pra não esquecer)
+## Conceito-chave (pra não esquecer)
 
 O **alfabeto** dá os símbolos → as **cadeias** são formadas com esses símbolos
 → `Σ*` junta todas as cadeias possíveis → a **linguagem** escolhe algumas
@@ -367,4 +367,4 @@ linguagem.
 
 ---
 
-[⬅️ Voltar ao início](README.md)
+[Voltar ao início](README.md)

@@ -1,4 +1,4 @@
-# 📝 Atividade 2 — Gramática
+# Atividade 2 — Gramática
 
 ## Enunciado
 
@@ -11,7 +11,7 @@ G = ({S}, {a}, {S → aS | ε}, S)
 
 ---
 
-## ✍️ Resolução
+## Resolução
 
 A regra é `S → aS | ε`, ou seja, cada vez que aparece `S` eu posso trocar por
 `aS` (coloca um `a` e continua) **ou** por `ε` (para de gerar).
@@ -24,7 +24,7 @@ Aplicando a regra passo a passo:
 
 ---
 
-## ✅ Gabarito
+## Gabarito
 
 Uma resposta possível:
 ```
@@ -41,8 +41,8 @@ aaaaa
 ...
 ```
 
-> 💡 A gramática gera qualquer quantidade de `a` (inclusive nenhum, que é `ε`).
+> **Obs.:** A gramática gera qualquer quantidade de `a` (inclusive nenhum, que é `ε`).
 
 ---
 
-[⬅️ Voltar ao início](../README.md)
+[Voltar ao início](../README.md)

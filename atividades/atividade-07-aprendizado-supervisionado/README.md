@@ -1,30 +1,29 @@
-# 📝 Atividade 7 — Sistema especialista com aprendizado supervisionado
+# Atividade 7 — Sistema especialista com aprendizado supervisionado
 
 > Aula 13 (09/11). A professora pediu para adaptar o notebook do orientador de
 > estudos para um problema nosso. Usei a minha parte do squad 5: a **fila de
 > cadastros** que o administrador do repositório de TCCs precisa validar.
 
-📓 Notebook: [`fila_de_cadastros.ipynb`](fila_de_cadastros.ipynb)
-▶️ Abrir no Colab: [link](https://colab.research.google.com/github/JulyAtaides/IA_-KADIDJA-/blob/main/atividades/atividade-07-aprendizado-supervisionado/fila_de_cadastros.ipynb)
-🗃️ Dataset: [`dataset_fila_de_cadastros.csv`](dataset_fila_de_cadastros.csv)
+- Notebook: [`fila_de_cadastros.ipynb`](fila_de_cadastros.ipynb)
+- Abrir no Colab: [link](https://colab.research.google.com/github/JulyAtaides/IA_-KADIDJA-/blob/main/atividades/atividade-07-aprendizado-supervisionado/fila_de_cadastros.ipynb)
+- Dataset: [`dataset_fila_de_cadastros.csv`](dataset_fila_de_cadastros.csv)
 
 ---
 
-## 💭 A ideia
+## Resumo do que eu fiz
 
-```
-dados do cadastro  →  árvore de decisão  →  previsão (validado / recusado)
-                                                    │
-o administrador confirma o vínculo? (sim / não) ────┤
-                                                    ▼
-                                         regras R1 a R4  →  o que fazer
-```
+Primeiro a árvore de decisão olha três coisas do cadastro (quantas palavras tem
+o nome, se o e-mail tem o nome da pessoa e quantos números tem no e-mail) e
+diz se ele tem cara de **validado** ou **recusado**.
 
-- A **árvore** aprende com os dados (a parte que "aprende sozinha").
-- As **regras** fui eu que escrevi (a parte do sistema especialista).
-- A previsão do modelo vira um **fato** que as regras usam.
+Depois essa resposta vira um fato. O sistema especialista junta esse fato com
+o que o administrador sabe (se ele já confirmou que a pessoa é da faculdade) e
+escolhe uma das quatro regras: validar, confirmar antes, conferir com a pessoa
+ou recusar com motivo.
 
-## ✅ Resultado
+A árvore é a parte que aprende com os dados. As regras fui eu que escrevi.
+
+## Resultado
 
 | | |
 |:--|:--|
@@ -33,10 +32,10 @@ o administrador confirma o vínculo? (sim / não) ────┤
 | Acurácia | 100% nos 5 de teste |
 | O que a árvore aprendeu | e-mail sem o nome da pessoa → recusado; nome com 1 palavra → recusado |
 
-> 💡 Os 100% não provam nada: são poucos casos e dados simulados. Expliquei
+> **Obs.:** Os 100% não provam nada: são poucos casos e dados simulados. Expliquei
 > isso no notebook, junto com o risco de viés (nome curto não quer dizer
 > cadastro falso).
 
 ---
 
-[⬅️ Voltar ao início](../../README.md)
+[Voltar ao início](../../README.md)

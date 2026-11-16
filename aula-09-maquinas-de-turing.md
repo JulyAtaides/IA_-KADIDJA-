@@ -1,4 +1,4 @@
-# 📖 Aula 09 — Máquinas de Turing
+# Aula 09 — Máquinas de Turing
 
 > Aula remota. O material foi o vídeo **Akitando #86 — O Computador de Turing
 > e Von Neumann: Por que calculadoras não são computadores?**. Essas são as
@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 O que eu preciso saber ao terminar a aula
+## O que eu preciso saber ao terminar a aula
 
 - O que é uma Máquina de Turing e suas partes;
 - Como ela funciona passo a passo;
@@ -52,7 +52,7 @@ A cada passo ela faz sempre a mesma coisa:
 Ela **para** quando chega no estado de aceitação ou quando não tem regra pra
 situação (aí rejeita).
 
-> 💡 Exemplo do vídeo: somar 1 num número binário. A máquina vai até o fim do
+> **Obs.:** Exemplo do vídeo: somar 1 num número binário. A máquina vai até o fim do
 > número, volta trocando 1 por 0 (o "vai um") e quando acha um 0 escreve 1.
 
 ---
@@ -61,8 +61,8 @@ situação (aí rejeita).
 
 É quando uma linguagem consegue fazer **tudo** que uma Máquina de Turing faz.
 
-- ✅ Python, Java, C, até Brainfuck
-- ❌ Regex, HTML, XML
+- Python, Java, C, até Brainfuck
+- Regex, HTML, XML
 
 A regex não é porque não tem memória e só anda pra frente (bem o que eu vi na
 unidade 3!).
@@ -74,7 +74,7 @@ unidade 3!).
 O Turing provou que **não existe** um programa que olhe qualquer outro
 programa e diga se ele vai parar ou ficar em loop infinito.
 
-> ⚠️ Não é que ainda não descobriram. É **provado** que é impossível. Então
+> **Atenção:** Não é que ainda não descobriram. É **provado** que é impossível. Então
 > existem problemas que nenhum computador resolve.
 
 ---
@@ -110,7 +110,7 @@ Von Neumann  → a prática (como construir)
 
 ---
 
-## 📌 Checklist
+## Checklist
 
 - [ ] Sei as 5 partes da máquina;
 - [ ] Sei explicar um passo dela;
@@ -118,8 +118,8 @@ Von Neumann  → a prática (como construir)
 - [ ] Sei explicar o problema da parada;
 - [ ] Sei por que o ENIAC era "calculadora".
 
-✅ Atividade da aula: [Atividade 5 — Máquinas de Turing](atividades/atividade-05-maquina-de-turing/README.md)
+Atividade da aula: [Atividade 5 — Máquinas de Turing](atividades/atividade-05-maquina-de-turing/README.md)
 
 ---
 
-[⬅️ Voltar ao início](README.md)
+[Voltar ao início](README.md)

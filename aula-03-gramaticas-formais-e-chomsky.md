@@ -1,11 +1,11 @@
-# 📖 Aula 3 — Gramáticas Formais e Hierarquia de Chomsky
+# Aula 3 — Gramáticas Formais e Hierarquia de Chomsky
 
 > Minhas anotações da aula 3. Aqui a gente aprofundou gramática (que já tinha
 > aparecido na aula 1) e viu como o Chomsky separa as gramáticas em tipos.
 
 ---
 
-## 🎯 O que eu preciso saber ao terminar a aula
+## O que eu preciso saber ao terminar a aula
 
 - Identificar as **4 partes** de uma gramática `G = (V, T, P, S)`;
 - Saber a diferença entre `→` e `⇒`;
@@ -29,7 +29,7 @@ G = (V, T, P, S)
 | `P` | Produções | as regras |
 | `S` | Símbolo inicial | por onde a derivação começa |
 
-> ⚠️ Na aula 1 apareceu `G = (N, Σ, P, S)`. É a mesma coisa com outros nomes:
+> **Atenção:** Na aula 1 apareceu `G = (N, Σ, P, S)`. É a mesma coisa com outros nomes:
 > `N` = `V` e `Σ` = `T`. Fiquei confusa no começo, mas é só o nome que muda.
 
 **Exemplo da aula:**
@@ -67,7 +67,7 @@ S ⇒ aS ⇒ aaS ⇒ aab
 - `S → aS` coloca um `a` e deixa o `S` pra continuar;
 - `S → b` coloca o `b` e **acaba**, porque não devolve variável.
 
-> 💡 **Quando termina?** Quando não tem mais nenhuma letra maiúscula na linha.
+> **Obs.:** **Quando termina?** Quando não tem mais nenhuma letra maiúscula na linha.
 > `aaS` ainda não é palavra! `aab` é.
 
 ---
@@ -78,7 +78,7 @@ As regras só podem ter **um terminal seguido de no máximo uma variável**, e a
 variável tem que ficar **na ponta**:
 
 ```
-S → aS | b      ✅ regular
+S → aS | b      regular
 ```
 
 Gera `{b, ab, aab, aaab, ...}`, ou seja, `aⁿb`.
@@ -91,7 +91,7 @@ Aqui a única exigência é: do lado **esquerdo** tem que ter **uma variável
 sozinha**. Do lado direito pode ter qualquer coisa.
 
 ```
-S → aSb | ε     ✅ livre de contexto (o S está no MEIO)
+S → aSb | ε     livre de contexto (o S está no MEIO)
 ```
 
 ```
@@ -118,7 +118,7 @@ Um tipo fica **dentro** do outro:
 Tipo 3 ⊂ Tipo 2 ⊂ Tipo 1 ⊂ Tipo 0
 ```
 
-> ⚠️ Toda regular também é livre de contexto! Mas na hora de classificar eu
+> **Atenção:** Toda regular também é livre de contexto! Mas na hora de classificar eu
 > respondo a classe **mais apertada** (o número maior).
 
 ---
@@ -153,7 +153,7 @@ Basta **uma** regra fora do formato pra não ser regular.
 
 ---
 
-## 📌 Checklist da Aula 3
+## Checklist da Aula 3
 
 - [ ] Sei dizer quem é V, T, P e S;
 - [ ] Sei a diferença entre `→` e `⇒`;
@@ -162,8 +162,8 @@ Basta **uma** regra fora do formato pra não ser regular.
 - [ ] Sei classificar regular x livre de contexto;
 - [ ] Sei a ordem dos tipos de Chomsky.
 
-✅ Atividade da aula: [Atividade 3 — Gramáticas Formais e Hierarquia de Chomsky](atividades/atividade-03-gramaticas-formais-e-chomsky.md)
+Atividade da aula: [Atividade 3 — Gramáticas Formais e Hierarquia de Chomsky](atividades/atividade-03-gramaticas-formais-e-chomsky.md)
 
 ---
 
-[⬅️ Voltar ao início](README.md)
+[Voltar ao início](README.md)

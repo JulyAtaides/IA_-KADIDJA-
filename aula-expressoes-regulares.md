@@ -1,11 +1,11 @@
-# 📖 Unidade 3 — Expressões Regulares
+# Unidade 3 — Expressões Regulares
 
 > Anotações da aula de expressões regulares (regex). Foi a aula que ligou a
 > teoria com código de verdade.
 
 ---
 
-## 🎯 O que eu preciso saber ao terminar a aula
+## O que eu preciso saber ao terminar a aula
 
 - O que é uma expressão regular;
 - Onde ela fica na Hierarquia de Chomsky;
@@ -26,7 +26,7 @@ aceita:  a, ab, abb, abbb...
 recusa:  b, ba, aab
 ```
 
-> 💡 A gramática **gera** as palavras. A regex **confere** se uma palavra
+> **Obs.:** A gramática **gera** as palavras. A regex **confere** se uma palavra
 > pertence ou não.
 
 ---
@@ -61,7 +61,7 @@ As duas querem dizer "vários `a` (ou nenhum) e um `b` no final".
 | `^` | começo | |
 | `$` | fim | |
 
-> ⚠️ O que eu mais confundi: `*` aceita **zero** vezes, então `a*` aceita a
+> **Atenção:** O que eu mais confundi: `*` aceita **zero** vezes, então `a*` aceita a
 > palavra vazia. O `+` exige **pelo menos um**.
 
 ---
@@ -86,8 +86,8 @@ Aceita `Maria`, `Brasil`. Recusa `maria`, `MARIA` e `M`.
 A regex **não tem memória**, então ela não consegue contar.
 
 ```
-0ⁿ1ⁿ   (mesma quantidade de 0 e 1)   ❌ regex não consegue
-0*1*   (quantos 0 e 1 quiser)         ✅ consegue
+0ⁿ1ⁿ   (mesma quantidade de 0 e 1)   regex não consegue
+0*1*   (quantos 0 e 1 quiser)         consegue
 ```
 
 Pra `0ⁿ1ⁿ` precisa de algo mais forte, e isso aparece na aula 09 com a
@@ -107,7 +107,7 @@ Máquina de Turing.
 
 ---
 
-## 📌 Checklist
+## Checklist
 
 - [ ] Sei explicar o que é regex;
 - [ ] Sei que ela é tipo 3;
@@ -115,8 +115,8 @@ Máquina de Turing.
 - [ ] Sei pra que servem `^` e `$`;
 - [ ] Sei por que ela não reconhece `0ⁿ1ⁿ`.
 
-✅ Atividade da aula: [Atividade 4 — Regex para validação de e-mail](atividades/atividade-04-regex-validacao-email/README.md)
+Atividade da aula: [Atividade 4 — Regex para validação de e-mail](atividades/atividade-04-regex-validacao-email/README.md)
 
 ---
 
-[⬅️ Voltar ao início](README.md)
+[Voltar ao início](README.md)

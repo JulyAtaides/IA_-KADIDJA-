@@ -1,17 +1,17 @@
-# 📝 Atividade 5 — Máquinas de Turing
+# Atividade 5 — Máquinas de Turing
 
 > Atividade remota da aula 09 (vale 1,0 ponto). O material era o vídeo
 > **Akitando #86 — O Computador de Turing e Von Neumann**. Assisti, anotei
 > o que achei importante e depois fiz a máquina que reconhece `0ⁿ1ⁿ`.
 
-📄 Código: [`maquina_de_turing.py`](maquina_de_turing.py)
-🖼️ Prints: pasta [`prints`](prints)
-📎 PDF que eu entreguei: [`entrega-atividade-05.pdf`](entrega-atividade-05.pdf)
-📖 Resumo da aula: [aula 09 — Máquinas de Turing](../../aula-09-maquinas-de-turing.md)
+Código: [`maquina_de_turing.py`](maquina_de_turing.py)
+Prints: pasta [`prints`](prints)
+PDF que eu entreguei: [`entrega-atividade-05.pdf`](entrega-atividade-05.pdf)
+Resumo da aula: [aula 09 — Máquinas de Turing](../../aula-09-maquinas-de-turing.md)
 
 ---
 
-## ✍️ Etapa 1 — Introdução
+## Etapa 1 — Introdução
 
 ### 1. O que é uma Máquina de Turing?
 
@@ -58,7 +58,7 @@ se nenhuma Máquina de Turing resolve, não tem algoritmo que resolva.
 
 ---
 
-## ✍️ Etapa 2 — Simulação
+## Etapa 2 — Simulação
 
 ### Enunciado
 
@@ -77,7 +77,7 @@ A máquina não tem variável pra guardar "quantos 0 eu vi". Então eu fiz ela
 - vou até o primeiro `1` e troco por **B**
 - volto pro começo e repito
 
-Se no final só sobrar A e B, a quantidade de 0 e de 1 era igual. 😄
+Se no final só sobrar A e B, a quantidade de 0 e de 1 era igual.
 
 Exemplo com `0011`:
 
@@ -113,37 +113,37 @@ A A B B    marquei o 2º par
 | confere | B | B | → | confere |
 | confere | (vazio) | (vazio) | → | aceita |
 
-> 💡 Se a máquina cair numa situação que não está na tabela, ela para e
+> **Obs.:** Se a máquina cair numa situação que não está na tabela, ela para e
 > **rejeita**. Ex.: `confere` lendo `1` quer dizer que sobrou 1 sem par.
 
 ---
 
-## ✍️ Etapa 3 — Registro da simulação
+## Etapa 3 — Registro da simulação
 
 | Teste | Entrada | Esperado | Obtido | Estados percorridos |
 |:--:|:--|:--:|:--:|:--|
-| 1 | `01` | ACEITA | ✅ ACEITA | inicio → procura_1 → volta → inicio → confere → aceita |
-| 2 | `00001111` | ACEITA | ✅ ACEITA | inicio → procura_1 → volta (4 vezes) → inicio → confere → aceita |
-| 3 | `011` | REJEITA | ❌ REJEITA | inicio → procura_1 → volta → inicio → confere (parou lendo 1) |
+| 1 | `01` | ACEITA | ACEITA | inicio → procura_1 → volta → inicio → confere → aceita |
+| 2 | `00001111` | ACEITA | ACEITA | inicio → procura_1 → volta (4 vezes) → inicio → confere → aceita |
+| 3 | `011` | REJEITA | REJEITA | inicio → procura_1 → volta → inicio → confere (parou lendo 1) |
 
 No teste 2 o caminho completo é `inicio → procura_1 → volta` repetido **4
 vezes** (uma pra cada par), depois `inicio → confere → aceita`.
 
-### 🖼️ Teste 1 — `01`
+### Teste 1 — `01`
 
 ![teste 1](prints/teste1_01.png)
 
 O menor caso. Marca o 0, marca o 1, volta, e o `inicio` já encontra B, então
 vai pro `confere`, acha o vazio e aceita.
 
-### 🖼️ Teste 2 — `00001111`
+### Teste 2 — `00001111`
 
 ![teste 2](prints/teste2_00001111.png)
 
 Aqui a máquina dá 4 voltas inteiras. Deu pra ver que ela anda bastante: cada
 volta ela vai e volta pela fita toda.
 
-### 🖼️ Teste 3 — `011`
+### Teste 3 — `011`
 
 ![teste 3](prints/teste3_011.png)
 
@@ -151,7 +151,7 @@ Marcou o único 0 e o primeiro 1. Quando foi conferir, ainda tinha um `1`
 sobrando. Não tem regra pra `confere` lendo `1`, então ela rejeitou. Era isso
 mesmo que tinha que acontecer.
 
-> ✔️ Também rodei os outros exemplos do enunciado (`0011`, `000111`, `0`, `1`,
+> Também rodei os outros exemplos do enunciado (`0011`, `000111`, `0`, `1`,
 > `001`, `00111`) e todos deram o resultado esperado.
 
 ### Descrição da Máquina de Turing criada
@@ -166,7 +166,7 @@ rejeita.
 
 ---
 
-## 🤔 Etapa 4 — Reflexão sobre os limites computacionais
+## Etapa 4 — Reflexão sobre os limites computacionais
 
 **Uma Máquina de Turing consegue resolver qualquer problema?**
 
@@ -182,7 +182,7 @@ solução.
 
 ---
 
-## 🤔 Questão final
+## Questão final
 
 **Como saber se um problema é só difícil ou se não existe algoritmo pra ele?**
 
@@ -201,12 +201,12 @@ Pra descobrir qual é o caso:
 2. Se resolver o meu problema também resolveria o **problema da parada**, então
    ele é indecidível, porque o da parada já foi provado impossível.
 
-> ⚠️ Só ver que o programa "está demorando muito" não prova nada. Demora é
+> **Atenção:** Só ver que o programa "está demorando muito" não prova nada. Demora é
 > sinal de problema difícil, não de problema impossível.
 
 ---
 
-## ✅ Resumo
+## Resumo
 
 ```
 Minha máquina   marca 0 com A e 1 com B, um par por vez
@@ -219,4 +219,4 @@ impossível      indecidível = não tem algoritmo nenhum
 
 ---
 
-[⬅️ Voltar ao início](../../README.md)
+[Voltar ao início](../../README.md)

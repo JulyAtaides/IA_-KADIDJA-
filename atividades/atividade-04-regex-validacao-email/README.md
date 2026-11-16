@@ -1,15 +1,15 @@
-# 📝 Atividade 4 — Regex para validação de e-mail
+# Atividade 4 — Regex para validação de e-mail
 
 > Unidade 3 — Expressões Regulares. Essa foi a primeira atividade da matéria
 > em que a gente escreveu código de verdade. Resolvi primeiro no caderno e
 > depois passei pra cá.
 
-📄 Código: [`validador_email.py`](validador_email.py)
-📖 Resumo da aula: [Expressões Regulares](../../aula-expressoes-regulares.md)
+Código: [`validador_email.py`](validador_email.py)
+Resumo da aula: [Expressões Regulares](../../aula-expressoes-regulares.md)
 
 ---
 
-## 📖 Resumo da aula
+## Resumo da aula
 
 A aula foi sobre **expressões regulares** (regex). O que eu entendi:
 
@@ -51,7 +51,7 @@ informe o motivo.
 
 ---
 
-## ✍️ Resolução
+## Resolução
 
 Dividi o programa em **três partes**: a regex, a função que explica o erro e a
 parte que lê os e-mails e mostra o resultado.
@@ -137,7 +137,7 @@ for i in range(5):
 
 ---
 
-## ✅ Gabarito
+## Gabarito
 
 **Entrada** (os e-mails que a professora passou):
 
@@ -166,18 +166,18 @@ Por que cada um deu esse resultado:
 
 | E-mail | Resultado | Por quê |
 |:--|:--:|:--|
-| `maria@gmail.com` | ✅ | tem usuário, @, domínio com ponto e extensão `com` |
-| `joao.silva@udf.edu.br` | ✅ | ponto no meio do usuário pode; o domínio repetiu (`udf.` e `edu.`) |
-| `pedro.gmail.com` | ❌ | não tem `@` |
-| `ana@dominio` | ❌ | o domínio não tem ponto, então não tem extensão |
-| `estudante_01@faculdade.com` | ✅ | `_` e número estão liberados no usuário |
+| `maria@gmail.com` | sim | tem usuário, @, domínio com ponto e extensão `com` |
+| `joao.silva@udf.edu.br` | sim | ponto no meio do usuário pode; o domínio repetiu (`udf.` e `edu.`) |
+| `pedro.gmail.com` | não | não tem `@` |
+| `ana@dominio` | não | o domínio não tem ponto, então não tem extensão |
+| `estudante_01@faculdade.com` | sim | `_` e número estão liberados no usuário |
 
-> 💡 Rodei o programa com esses 5 e-mails e a saída bateu com o que eu tinha
+> **Obs.:** Rodei o programa com esses 5 e-mails e a saída bateu com o que eu tinha
 > feito no caderno: **3 válidos e 2 inválidos**.
 
 ---
 
-## 📓 Minha resolução no caderno
+## Minha resolução no caderno
 
 Fiz primeiro à mão e depois passei o código pro computador. As páginas estão
 na ordem:
@@ -200,7 +200,7 @@ na ordem:
 
 ---
 
-## ⚠️ Cuidados que anotei
+## Cuidados que anotei
 
 - O `.` sozinho na regex é **qualquer símbolo**. Pra ponto de verdade é `\.`
 - Sem o `^` e o `$` a regex aceita só um pedaço da palavra.
@@ -208,4 +208,4 @@ na ordem:
 
 ---
 
-[⬅️ Voltar ao início](../../README.md)
+[Voltar ao início](../../README.md)
