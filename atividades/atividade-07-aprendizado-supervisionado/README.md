@@ -32,9 +32,9 @@ A árvore é a parte que aprende com os dados. As regras fui eu que escrevi.
 | Acurácia | 100% nos 5 de teste |
 | O que a árvore aprendeu | e-mail sem o nome da pessoa → recusado; nome com 1 palavra → recusado |
 
-> **Obs.:** Os 100% não provam nada: são poucos casos e dados simulados. Expliquei
-> isso no notebook, junto com o risco de viés (nome curto não quer dizer
-> cadastro falso).
+Fiquei desconfiada dos 100%, porque são só 5 casos e fui eu que inventei os dados.
+Na conclusão do notebook eu falo disso e do risco de o sistema ser injusto com
+quem tem nome curto.
 
 ---
 
