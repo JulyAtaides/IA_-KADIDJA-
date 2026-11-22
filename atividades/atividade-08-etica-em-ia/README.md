@@ -37,7 +37,7 @@ de previsão; as regras R1 a R4 e R11 e R12 usam a previsão junto com o que a p
 | Aspecto | Situação no projeto | Quem pode ser afetado | O que fizemos ou faríamos |
 |:--|:--|:--|:--|
 | Privacidade e dados | O cadastro guarda nome, e-mail e data de nascimento. | Quem se cadastra. | O modelo só usa contagens (palavras do nome, números no e-mail), os dados são inventados e o squad apaga cadastro parado em 30 dias (RN-36). |
-| Viés e equidade | A árvore aprendeu que nome de uma palavra e e-mail sem nome levam a "recusado". | Quem tem nome curto, nome estrangeiro registrado diferente ou e-mail de setor. | Testar cadastros iguais mudando só o tamanho do nome; a R3 manda falar com a pessoa antes de recusar; recusar exige motivo (RN-36). |
+| Viés e equidade | A árvore aprendeu que nome de uma palavra e e-mail sem nome levam a "recusado". | Quem tem nome curto, nome estrangeiro registrado diferente ou e-mail de setor. | Testar cadastros iguais mudando só o tamanho do nome; a R3 pede conferência com a pessoa; a R4 pede confirmar o vínculo e os dados antes de decidir; recusar exige motivo (RN-36). |
 | Transparência | O administrador pode achar que a previsão já é a decisão. | Quem se cadastra. | A saída mostra a previsão, a regra, os fatos usados e o aviso de que é só uma recomendação. |
 | Supervisão e responsabilidade | Um cadastro válido pode ser recusado por erro do modelo. | Quem se cadastra e, depois, a curadoria, que fica sem pessoas para analisar. | Quem decide é sempre o administrador (RF13). A pessoa recusada recebe o motivo por e-mail e pode se cadastrar de novo. |
 | Impacto social | A fila de cadastros anda mais rápido e a curadoria começa a trabalhar antes. | Ajuda o administrador e os alunos; prejudica quem for recusado sem motivo real. | O protótipo não mexe no sistema real e só seria usado depois de testar com decisões reais e com autorização da faculdade. |
@@ -52,7 +52,7 @@ vários cadastros perto de completar 30 dias.
 * **Usar o modelo só como sugestão:** dá mais trabalho, mas ninguém é recusado só por um padrão, e
   quem for recusado sabe o motivo e pode contestar.
 
-Ficamos com a segunda, que é o que as regras R2 e R3 fazem.
+Ficamos com a segunda, que é o que as regras R2, R3 e R4 fazem.
 
 ### Reflexão individual: Julyane Ataides
 
