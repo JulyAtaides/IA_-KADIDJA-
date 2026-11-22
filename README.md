@@ -15,7 +15,8 @@ pasta ou arquivo, na ordem em que foram passadas.
 | 14/09 | Expressões regulares | [resumo](aula-expressoes-regulares.md) | [Atividade 4 · regex de e-mail](atividades/atividade-04-regex-validacao-email/README.md) ([código](atividades/atividade-04-regex-validacao-email/validador_email.py)) |
 | 28/09 | Máquinas de Turing | [resumo](aula-09-maquinas-de-turing.md) | [Atividade 5 · máquina para 0ⁿ1ⁿ](atividades/atividade-05-maquina-de-turing/README.md) ([código](atividades/atividade-05-maquina-de-turing/maquina_de_turing.py)) |
 | 19/10 | Agentes inteligentes | [resumo](atividades/atividade-06-agentes-inteligentes/README.md) | [Atividade 6 · exercícios 2.3, 2.4 e 2.5](<atividades/atividade-06-agentes-inteligentes/ATIVIDADE KADIDJA.docx>) |
-| 09/11 | Aprendizado supervisionado | — | [Atividade 7 · fila de cadastros](atividades/atividade-07-aprendizado-supervisionado/README.md) ([Colab](https://colab.research.google.com/github/JulyAtaides/IA_-KADIDJA-/blob/main/atividades/atividade-07-aprendizado-supervisionado/fila_de_cadastros.ipynb)) |
+| 09/11 | Aprendizado supervisionado | — | [Atividade 7 · filas de cadastros e da curadoria (em grupo com o João)](atividades/atividade-07-aprendizado-supervisionado/README.md) ([Colab](https://colab.research.google.com/github/SungJiinwoo/Inteligencia_Artificial_Linguagens_Formais_e_Automatos/blob/main/Unidade5_SistemasEspecialistas/Triagem_Curadoria_TCC.ipynb)) |
+| 16/11 | Ética e implicações em IA (A1) | — | [Atividade 8 · análise ética do projeto](atividades/atividade-08-etica-em-ia/README.md) |
 
 ## Como rodar os códigos
 
