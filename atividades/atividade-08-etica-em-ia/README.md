@@ -31,8 +31,8 @@ cadastros não validados e ajuda a curadoria a saber o que conferir em cada TCC.
 afetado são as pessoas que se cadastram (orientadores, coordenação e curadoria) e os alunos que
 têm o TCC analisado. A IA entra em duas árvores de decisão: uma prevê se o cadastro tem cara de
 `validado` ou `recusado` e a outra se o TCC tem cara de `aprovada` ou `rejeitada`. As regras de
-acesso (R5 a R7), de data (R8) e de duplicidade (R9) são regras de negócio do squad e não dependem
-de previsão; as regras R1 a R4 e R10 e R11 usam a previsão junto com o que a pessoa informa.
+acesso (R5 a R8), de data (R9) e de duplicidade (R10) são regras de negócio do squad e não dependem
+de previsão; as regras R1 a R4 e R11 e R12 usam a previsão junto com o que a pessoa informa.
 
 | Aspecto | Situação no projeto | Quem pode ser afetado | O que fizemos ou faríamos |
 |:--|:--|:--|:--|
@@ -78,7 +78,7 @@ padrão. A revisão cabe ao administrador (cadastros) e à curadoria (TCCs).
 **IA utilizada na elaboração do trabalho.** Utilizei o Claude (Anthropic, modelo Opus) para juntar
 a minha parte e a do João em um notebook só, revisar os textos e conferir se a entrega seguia o que
 a professora pediu. Aproveitei sugestões de organização do código e da base de regras e ajustes de
-redação depois de conferir as regras R1 a R7 com o que implementamos no squad 5
+redação depois de conferir as regras R1 a R8 com o que implementamos no squad 5
 (`contas/services.py` e `docs/requirements.md`), rodar o notebook inteiro e ver se os resultados
 batiam com a análise. Assumo a responsabilidade pelas escolhas, verificações e conteúdo da entrega.
 

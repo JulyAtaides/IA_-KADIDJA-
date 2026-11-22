@@ -22,8 +22,11 @@ recebeu o perfil **Curadoria**.
 | Parte | O que faz | Quem fez |
 |:--|:--|:--|
 | Fila de cadastros | árvore de decisão prevê `validado` ou `recusado`; regras R1 a R4 dizem o que o administrador faz | eu |
-| Fila da curadoria | árvore de decisão prevê `aprovada` ou `rejeitada`; regras R8 a R11 dizem o que a curadoria confere | João |
-| Ligação entre as duas | regras R5 a R7: cadastro não validado, perfil errado ou TCC enviado pela própria pessoa bloqueiam a análise | nós dois |
+| Ligação entre as duas | regras R5 a R8: com o cadastro validado, o perfil Curadoria e sem ter enviado o TCC, o motor deduz que o acesso está liberado; senão, bloqueia a análise | nós dois |
+| Fila da curadoria | árvore de decisão prevê `aprovada` ou `rejeitada`; regras R9 a R12 dizem o que a curadoria confere, e só disparam com o acesso liberado | João |
+
+O motor encadeia as regras: o resultado da minha fila vira fato para as regras de acesso, e o fato
+que elas deduzem (`acesso_liberado`) é o que ativa as regras da parte do João.
 
 ## Resultado
 
