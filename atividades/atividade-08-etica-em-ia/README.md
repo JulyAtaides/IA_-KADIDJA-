@@ -56,12 +56,24 @@ Ficamos com a segunda, que é o que as regras R2 e R3 fazem.
 
 ### Reflexão individual: Julyane Ataides
 
-Eu manteria a decisão de o administrador dar sempre a última palavra e mudaria os dados de
-treino: colocaria mais exemplos de nomes curtos e de e-mails de setor que foram validados, porque
-hoje a linha 20 aparece uma vez só e a árvore erra ela mesmo estando no treino. O argumento que
-mais me influenciou foi o do vídeo, de que o cuidado tem que estar no sistema desde o começo e não
-ser colocado no final. Para saber se a medida funciona, eu compararia quantos cadastros o modelo
-marcou como "recusado" e o administrador acabou validando, separando por tamanho do nome.
+Eu manteria a decisão de o administrador dar sempre a última palavra (RF13), porque na minha parte
+o erro custa caro: um cadastro recusado é apagado (RN-36) e a pessoa precisa começar tudo de novo.
+O que eu mudaria são os dados de treino e a forma como a recusa aparece. No meu dataset, a linha 20
+é uma pessoa da faculdade com nome de duas palavras e e-mail de setor, sem o nome dela, e foi
+validada. Ela aparece uma vez só, e a árvore erra essa linha mesmo tendo treinado com ela, porque
+aprendeu que "e-mail sem nome" quase sempre é recusado. Eu colocaria mais exemplos assim (nomes
+curtos, nomes estrangeiros e e-mails de setor validados) e não deixaria a previsão `recusado` ir
+direto para a recusa: antes, o administrador precisaria escrever o motivo. Isso lembra o que eu fiz
+na atividade 4: a regex só dizia se o e-mail era válido ou não, e eu tive que criar a função
+`motivo_invalido` para explicar o erro. Aqui é igual: a árvore só responde `validado` ou
+`recusado`, e quem recebe a recusa precisa saber o porquê para poder contestar. O argumento que
+mais me influenciou foi o do vídeo, de que a ética não pode ser um verniz no final e tem que estar
+desde o primeiro traço. No nosso caso, isso quer dizer que a revisão do administrador e o motivo da
+recusa fazem parte das regras (R2, R3 e R4), e não são um aviso colocado depois. Para saber se a
+medida funciona, eu compararia, durante um semestre, os cadastros que o modelo marcou como
+`recusado` com a decisão final do administrador, separando por tamanho do nome e por tipo de e-mail.
+Se a diferença entre nomes curtos e longos diminuir e ninguém da faculdade tiver o cadastro apagado
+por causa do nome, a mudança funcionou.
 
 ## 4. Declaração de uso de sistemas de IA
 
